@@ -10,9 +10,9 @@
             <h1>Simple Interest Calculator</h1>
 
             Amount <input type="number"  id="principal">  <br/>
-            Rate <input type="range"  id="rate" min=1 max=20 step=0.25 value=10.25> <br/>
+            Rate <input type="range"  id="rate" min=1 max=20 step=0.25 value=10.25 onchange="updateRate()"> <br/>
             <span id ="rate_val">10.25%</span>
-            No. of Years <select id="years">
+            No. of Years <select name="numbers" id="years">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -28,11 +28,11 @@
 
             <button onclick="compute()">Compute Interest</button>
             <span id="result">
-            </span>
+            </span><br>
             
             <footer>
-                &#169; This Calculator belongs to --Dane Knight--
-            </footer>
+                &#169; This Calculator belongs to --Dane Knight</footer>
             </div>
+            <script src="script.js"></script>
     </body>
 </html>
