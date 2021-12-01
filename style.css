@@ -16,9 +16,7 @@ h1 {
     padding: 20px;
     border-radius: 25px;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    align: center;
     
 }
 
