@@ -26,7 +26,7 @@ function compute() {
 function updateRate() {
     //reads and displays the value of the range slider
     var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=`${rateval}%`;
+    document.getElementById("rate_val").innerText=rateval
     
 }
         
