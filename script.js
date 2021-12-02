@@ -12,7 +12,7 @@ function compute() {
 
 
     // conditional statement to validate input box
-    if principal <= 0 => {
+    if(principal <= 0) {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
         return false;
