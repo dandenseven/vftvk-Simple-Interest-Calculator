@@ -10,16 +10,14 @@ function compute() {
 
 
     // conditional statement to validate input box
-    function showAlert() {
-        if(principal <= 0) {
+    if(principal <= 0) {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
         return false;
-        }
     }
 
     // set to show once Compute interest is clicked
-    document.getElementById("result").innerHTML= "If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\</br>";
+    document.getElementById("result").innerHTML= "If you deposit" +principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\</br>";
 
 }
 
@@ -29,9 +27,6 @@ function updateRate() {
     document.getElementById("rate_val").innerText=rateval;
     
 }
-        
-        
-
         
         
 
