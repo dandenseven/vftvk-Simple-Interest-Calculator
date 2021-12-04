@@ -1,11 +1,11 @@
 function compute() {
     //variables created for inputs
-    let principal = document.getElementById("principal").value;
-    let rate = document.getElementsById("rate").value;
-    let years = document.getElementById("years").value;
+    var principal = document.getElementById("principal").value;
+    var rate = document.getElementsById("rate").value;
+    var years = document.getElementById("years").value;
     
-    let interest = principal * years * rate / 100;
-    let year = new Date().getFullYear() + parseInt(years);
+    var interest = principal * years * rate / 100;
+    var year = new Date().getFullYear() + parseInt(years);
     
     document.getElementById("result").innerHTML= "If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+interest+",\<br\>in the year "+year+"\</br>";
 
@@ -24,7 +24,7 @@ function compute() {
 
 function updateRate() {
     //reads and displays the value of the range slider
-    let rateval = document.getElementById("rate").value;
+    var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval;
     
 }
@@ -32,13 +32,5 @@ function updateRate() {
         
 
         
-        
-
-
-
-        
-        
-
-
         
 
