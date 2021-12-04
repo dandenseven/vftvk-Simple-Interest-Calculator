@@ -1,13 +1,13 @@
 function compute() {
     //variables created for inputs
-    let principal = document.getElementById("principal").value;
-    let rate = document.getElementsById("rate").value;
-    let years = document.getElementById("years").value;
+    var principal = document.getElementById("principal").value;
+    var rate = document.getElementsById("rate").value;
+    var years = document.getElementById("years").value;
     
-    let interest = principal * years * rate / 100;
-    let year = new Date().getFullYear() + parseInt(years);
+    var interest = principal * years * rate / 100;
+    var year = new Date().getFullYear() + parseInt(years);
     
-
+    document.getElementById("result").innerHTML= "If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+interest+",\<br\>in the year "+year+"\</br>";
 
     // conditional statement to validate input box
     if(principal <= 0) {
@@ -17,8 +17,9 @@ function compute() {
     }
 
     // set to show once Compute interest is clicked
-    document.getElementById("result").innerHTML= "If you deposit" +principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\</br>";
 
+    // document.getElementById("result").innerHTML= "If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+interest+",\<br\>in the year "+year+"\</br>";
+    
 }
 
 function updateRate() {
@@ -31,5 +32,8 @@ function updateRate() {
         
 
         
+        
+
+
         
 
