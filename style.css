@@ -14,10 +14,9 @@ h1 {
 
 .maindiv {
     background-color: white;
-    background-position: split 50px center;
     color: black;
     width: 460px;
-    padding: 120px;
+    padding: 60px;
     border-radius: 25px;
     
 }
