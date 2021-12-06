@@ -20,6 +20,11 @@ h1 {
     width: 500px;
     padding: 20px;
     border-radius: 25px;
-    text-align: justify;
     
+    
+}
+
+.foot1 {
+    text-align: left;
+
 }
