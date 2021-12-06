@@ -25,6 +25,13 @@ h1 {
 
 }
 
+p {
+    text-align: center;
+}
+
+.button {
+    position: center;
+}
 .foot1 {
     text-align: left;
 
