@@ -25,7 +25,7 @@ h1 {
 
 }
 
-p {
+.center1 {
     text-align: center;
 }
 
@@ -35,4 +35,8 @@ p {
 .foot1 {
     text-align: left;
 
+}
+
+.result {
+    position: center;
 }
