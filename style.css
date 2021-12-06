@@ -27,16 +27,24 @@ h1 {
 
 .center1 {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button {
     position: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .foot1 {
     text-align: left;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
 .result {
     position: center;
+    margin-left: auto;
+    margin-right: auto;
 }
