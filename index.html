@@ -12,8 +12,8 @@
             <h1>Simple Interest Calculator</h1>
 
             <div class="center1">
-                Amount <input type="number" id="principal">  <br/>
-                Interest Rate <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()"> <br/> <span id ="rate_val">10.25%</span><br>
+                Amount <input type="number" id="principal"><br/><br>
+                Interest Rate <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()"><span id ="rate_val">10.25%</span><br/><br>
 
                 No. of Years 
                 <select name="number" id="years">
@@ -26,9 +26,9 @@
                     <option value="7">7</option>
                 <option value="8">8</option>   
                     <option value="9">9</option>
-                <option value="10">10</option></select> <br/>
+                <option value="10">10</option></select> <br/><br>
         
-                <button> onclick="compute()">Compute Interest</button><br/><br>
+                <button onclick="compute()">Compute Interest</button> <br/><br>
                 <span id="result"></span>"If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>
 
             </div>
@@ -39,7 +39,6 @@
         
     </body>
 </html>
-
 
 
 
