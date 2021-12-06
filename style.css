@@ -17,12 +17,11 @@ h1 {
 .maindiv {
     background-color: white;
     color: black;
-    width: 500px;
+    width: 520px;
     padding: 20px;
     border-radius: 25px;
-    align-content: center;
-    
-    
+    align: center;
+
 }
 
 .foot1 {
