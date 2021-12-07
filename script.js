@@ -1,19 +1,20 @@
 function compute() {
     //variables created for inputs
     var principal = document.getElementById("principal").value;
-    var rate = document.getElementsById("rate").value;
-    var years = document.getElementById("years").value;
-    
-    var interest = principal * years * rate / 100;
-    var year = new Date().getFullYear() + parseInt(years);
-    
 
+    
     // conditional statement to validate input box
     if(principal  == "" || principal <= 0) {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
         return false;
     }
+
+    var rate = document.getElementsById("rate").value;
+    var years = document.getElementById("years").value;
+    
+    var interest = principal * years * rate / 100;
+    var year = new Date().getFullYear() + parseInt(years);
 
     // set to show once Compute interest is clicked
     var resultShow = document.getElementById("result");
