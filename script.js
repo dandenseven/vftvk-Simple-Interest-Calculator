@@ -9,18 +9,19 @@ function compute() {
     
 
     // conditional statement to validate input box
-    if(principal <= 0) {
+    if(principal  == "" || principal <= 0) {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
         return false;
     }
 
     // set to show once Compute interest is clicked
-    var name = "If you deposit "+principal+",<br\>at an interest rate of "+rate+"%<br\>You will receive an amount of "+interest+",\<br\>in the year "+year+"\<br\>"
+    var resultShow = document.getElementById("result");
+    resultShow.innerHTML= "If you deposit "+ "<span class='highlight'>" + principal + "</span>," + " <br\> at an interest rate of "+ "<span class='highlight'>" + rate + "<span>%" + " <br\>You will receive an amount of "+ "<span class='highlight'>" + interest + "</span>" + ",<br\>in the year " + "<span class='highlight'> " + year +"</span>";
     // var name= `If you deposit <mark>${principal}</mark>,<br\>at an interest rate of <mark>${rate}%</mark><br\>You will receive an amount of <mark>${interest}</mark>,\<br\>in the year <mark>${year}</mark></br>`;
-    document.getElementById("result").innerHTML= name;
+    
    
-   
+
 }
 
 //reads and displays the value of the range slider
